@@ -16,8 +16,13 @@ export class LoginMethods{
 
     //Metodo para usar login completo
     static loginGlobal(username, password){
+        Logger.subStep('Insertar username')
         this.insertarUsername(username)
+
+        Logger.subStep('Insertar password')
         this.insertarPassword(password)
+
+        Logger.subStep('Click en boton Login')
         this.clickLoginButton()
     }
 }
