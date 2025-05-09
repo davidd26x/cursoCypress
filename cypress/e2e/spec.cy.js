@@ -12,8 +12,8 @@ describe("template spec", () => {
     cy.visit("https://demoblaze.com/");
 
     //Haciendo click en iphone
-    HomeMethods.clickOnProductLink("Iphone 6 32gb");
-    cy.wait(3000);
+    // HomeMethods.clickOnProductLink("Iphone 6 32gb");
+    // cy.wait(3000);
 
     //Click en el boton de login
     // cy.get('a[data-target="#logInModal"]').click();
