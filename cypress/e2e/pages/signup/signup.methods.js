@@ -1,3 +1,4 @@
+import { CommonPageMethods } from "../common-page/common-page.methods";
 import { SignupElements } from "./signup.elements";
 
 export class SignupMethods {
@@ -18,5 +19,11 @@ export class SignupMethods {
     SignupMethods.insertarUsername(username);
     SignupMethods.insertarPassword(password);
     SignupMethods.clickSignupButton();
+  }
+
+
+  //Nuevo metodo para mostrar el mensaje exitoso de inicio de sesión
+  static verifySignupSuccessfulMessageIsDisplayed(){
+    CommonPageMethods.verifyAlert("Sign up successful.")
   }
 }
